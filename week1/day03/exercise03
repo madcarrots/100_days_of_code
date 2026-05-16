@@ -1,0 +1,44 @@
+# Thomas Zermeno
+# May 16, 2026
+# Python-in-100-days-course
+# Day03
+
+# Exercise 1
+# Ask the user for two numbers and print all four artithmetic results.
+
+print("Input two numbers to see the results of\n-Addition!\n-Subtraction!\n-Multiplication!\n-Division!\n")
+a = int(input("Enter first number: \t"))
+b = int(input("Enter second number: \t"))
+
+add = a + b
+sub = a - b
+mult = a * b
+div = a / b
+
+print(f"\n\n{a} +  {b} = {add}")
+print(f"{a} -  {b} = {sub}")
+print(f"{a} *  {b} = {mult}")
+print(f"{a} /  {b} = {div}")
+
+# Exercise 2
+# String Formatter
+
+print("\n\n----Exercise 2----")
+print("Tell me about yourself.")
+name = input("What is your name? \t")
+age = int(input("How old are you? \t"))
+hobby = input("What's your favorite hobby? \t")
+
+print(f"\n\nHi, {name}! It's great that you are {age} and love {hobby}!")
+
+# Exercise 3
+# Tip Calculator
+
+print("\n\n----BONUS Exercise----")
+print("Tip Calulator")
+check = float(input("Total bill: \t\t"))
+grat = float(input("Tip %: \t\t\t"))
+people  = int(input("Number of payers: \t"))
+
+split = (check + (check * grat / 100)) / people
+print(f"\n\nFor a bill of {check}, with {people} people paying and leaving a {grat}% tip, each person should pay ${split:.2f}.")
